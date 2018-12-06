@@ -39,16 +39,16 @@ public class Main {
 //        First 10 Prime Numbers: 2 3 5 7 11 13 17 19 23 29
 //        Calculate the numbers using while or do...while loops to create the numbers
         System.out.print("\nThe First 10 Prime Numbers: ");
-        for (int num = 2; num < 30; num++) {
-            boolean flag = false;
-            for (int i = 2; i <= num / 2; ++i) {
-                if (num % i == 0) {
-                    flag = true;
+        for (int pri = 2; pri < 30; pri++) {
+            boolean prime = false;
+            for (int i = 2; i <= pri / 2; ++i) {
+                if (pri % i == 0) {
+                    prime = true;
                     break;
                 }
             }
-            if (!flag)
-                System.out.printf("%d ", num);
+            if (!prime)
+                System.out.printf("%d ", pri);
         }
 
 //        First 10 Triangle Numbers: 1 3 6 10 15 21 28 36 45 55
